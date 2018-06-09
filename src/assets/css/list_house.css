@@ -72,6 +72,11 @@
     /*background: url(//sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_list_icon.png?v=5) right -58px no-repeat;*/
     background-size: 16px auto;
 }
+
+.list-items{
+  border-bottom: 1px solid #efe0e0;
+}
+
 .list-items .house-info{
     height: 1.15rem;
     line-height: 1.15rem;

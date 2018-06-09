@@ -33,5 +33,11 @@ var routers = [{
   component(resolve) {
     require(['../views/detail.vue'], resolve)
   }
+},{
+  name: 'addHouse',
+  path: '/addHouse',
+  component(resolve) {
+    require(['../views/addHouse.vue'], resolve)
+  }
 }];
 export default routers;

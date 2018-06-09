@@ -5,10 +5,20 @@
       font-size: .9rem;
     }
   }
+
+  .house-header{
+    .back{
+      height: 2rem;
+      line-height: 2rem;
+      color: #00AA98;
+      font-size: .8rem;
+    }
+  }
 </style>
 <template>
   <div>
     <div class="house-header cont-padding">
+      <div class="back" @click="backList"><i class="iconfont icon-fanhui"></i>返回</div>
       <div class="house-header-left">
         <h2>精装全配，拎包入住，交通方便，房型正气，成熟小区，彩光通透，</h2>
         <div class="tips-info clear">
@@ -148,6 +158,11 @@
     },
     mounted() {
       var id = this.$route.query.id;
+    },
+    methods:{
+      backList(){
+        this.$router.go(-1);
+      }
     }
   }
 </script>

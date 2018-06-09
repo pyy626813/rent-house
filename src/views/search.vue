@@ -1,9 +1,14 @@
+<style rel="stylesheet/scss" lang="scss">
+  .house-search .vux-no-group-title{
+    margin-top: 0px!important;
+  }
+</style>
 <template>
-  <div>
+  <div class="house-search">
     <group>
-      <x-address v-model="condtion_address" :list="addressData" placeholder="请选择地址"
+      <x-address title="" v-model="condtion_address" :list="addressData" placeholder="请选择地址"
                  :show.sync="showAddress">
-        <i class="iconfont icon-sousuo" slot="title"></i>
+        <!--<i class="iconfont icon-sousuo" slot="title"></i>-->
       </x-address>
     </group>
     <div>
@@ -100,7 +105,7 @@
     </div>
   </div>
 </template>
-<style src="../assets/css/list_house.css"></style>
+<style src="../assets/css/list_house.css" scoped></style>
 <script>
   import {Group, XAddress, ChinaAddressV4Data} from 'vux'
 

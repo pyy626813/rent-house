@@ -125,7 +125,7 @@ a.touch {
 
 .house-header-right {
   position: absolute;
-  top: 0.579rem;
+  top: 2.5rem;
   right: 0.86rem;
   width: 2.58rem
 }
@@ -228,14 +228,14 @@ a.keep-item {
 }
 
 .house-icon {
-  padding: .05rem 0;
+  padding: 1rem 0 0;
   overflow: hidden
 }
 
 .house-icon li {
   float: left;
   width: 16.6%;
-  height: 3.1rem
+  height: 2.8rem
 }
 
 .house-icon li .icon {
@@ -244,7 +244,6 @@ a.keep-item {
   background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/detail_equit_icon.png?v=1) no-repeat;
   background-size: auto 55px;
   margin: 0 auto;
-  margin-top: 3.27rem
 }
 
 .house-icon li .text {
