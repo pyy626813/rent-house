@@ -17,6 +17,8 @@
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
     "vux": "^2.8.1",
+    "nebpay.js": "^0.1.0",
+    "nebulas": "^0.4.8",
     "vux-loader": "^1.2.6"
   },
   "devDependencies": {

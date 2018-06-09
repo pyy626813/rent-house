@@ -1,6 +1,8 @@
 //时间
 import Moment from 'moment';
 
+import nasTool from './nas';
+
 //jq
 import './deferred'
 import '@/assets/iconfont/iconfont.css';
@@ -16,6 +18,11 @@ const install = function (Vue, config = {}) {
   Vue.use(ToastPlugin);
   Vue.use(ConfirmPlugin);
   Vue.use(DatetimePlugin);
+
+
+  nasTool.init();
+  Vue.prototype.$nasTool = nasTool;
+
 
   global.moment = Moment;
 }

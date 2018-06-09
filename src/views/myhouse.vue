@@ -1,6 +1,6 @@
 <style rel="stylesheet/scss" lang="scss" scoped>
-  .myhouse{
-    .add{
+  .myhouse {
+    .add {
       position: absolute;
       bottom: 3.6rem;
       right: 2rem;
@@ -9,6 +9,20 @@
         font-size: 2rem;
         color: #00AA98;
       }
+    }
+    .list-items{
+      position: relative;
+    }
+    .rented {
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      z-index: 200;
+      right: 4rem;
+      top: 1rem;
+      background: url("../assets/images/rented.png") no-repeat;
+      background-size: 5rem 4.5rem;
+      opacity: 0.5;
     }
   }
 </style>
@@ -25,7 +39,8 @@
             精装全配，拎包入住，交通方便，房型正气，成熟小区，彩光通透，
           </div>
           <!-- 商铺列表页改版 2017 6月 只有fang 6 和 fang 7 有效 price_month_formate'],$data['price_month_type_formate -->
-          <div class="house-info"><span class="house-area">2室2厅</span><span class="house-area">98㎡</span><span class="house-area">朝南北</span>
+          <div class="house-info"><span class="house-area">2室2厅</span><span class="house-area">98㎡</span><span
+            class="house-area">朝南北</span>
           </div>
           <!-- 商铺列表页改版 2017 6月 end-->
           <div class="house-addr">
@@ -53,7 +68,8 @@
             精装全配，拎包入住，交通方便，房型正气，成熟小区，彩光通透，
           </div>
           <!-- 商铺列表页改版 2017 6月 只有fang 6 和 fang 7 有效 price_month_formate'],$data['price_month_type_formate -->
-          <div class="house-info"><span class="house-area">2室2厅</span><span class="house-area">98㎡</span><span class="house-area">朝南北</span>
+          <div class="house-info"><span class="house-area">2室2厅</span><span class="house-area">98㎡</span><span
+            class="house-area">朝南北</span>
           </div>
           <!-- 商铺列表页改版 2017 6月 end-->
           <div class="house-addr">
@@ -81,7 +97,8 @@
             精装全配，拎包入住，交通方便，房型正气，成熟小区，彩光通透，
           </div>
           <!-- 商铺列表页改版 2017 6月 只有fang 6 和 fang 7 有效 price_month_formate'],$data['price_month_type_formate -->
-          <div class="house-info"><span class="house-area">2室2厅</span><span class="house-area">98㎡</span><span class="house-area">朝南北</span>
+          <div class="house-info"><span class="house-area">2室2厅</span><span class="house-area">98㎡</span><span
+            class="house-area">朝南北</span>
           </div>
           <!-- 商铺列表页改版 2017 6月 end-->
           <div class="house-addr">
@@ -97,6 +114,9 @@
           </div>
         </dd>
       </dl>
+      <div class="rented">
+        <!--<img src="../assets/images/rented.png"/>-->
+      </div>
     </div>
 
     <div class="add">
@@ -107,10 +127,10 @@
 <style src="../assets/css/list_house.css" scoped></style>
 <script>
   export default {
-    methods:{
-      addHouse(){
+    methods: {
+      addHouse() {
         this.$router.push({
-          name:'addHouse'
+          name: 'addHouse'
         })
       }
     }

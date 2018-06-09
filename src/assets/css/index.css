@@ -71,7 +71,7 @@ a.touch {
   width: 79px;
   height: 65px;
   overflow: hidden;
-  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_yichuzu.png) no-repeat;
+  background: url(../images/rented.png) no-repeat;
   background-size: 100%
 }
 
@@ -140,7 +140,7 @@ a.keep-item {
 .keep-item .kicon {
   width: 22px;
   height: 22px;
-  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_icon.png?v=20180108) no-repeat;
+  background: url(../images/houses-icon.png) no-repeat;
   background-size: 110px auto;
   background-position: -29px -53px;
   margin: 0 auto
@@ -241,7 +241,7 @@ a.keep-item {
 .house-icon li .icon {
   width: 22px;
   height: 22px;
-  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/detail_equit_icon.png?v=1) no-repeat;
+  background: url(../images/house-device.png) no-repeat;
   background-size: auto 55px;
   margin: 0 auto;
 }
