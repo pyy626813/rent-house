@@ -1,0 +1,2068 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+a, body, dd, div, dl, dt, form, h1, h2, h3, html, input, li, ol, p, span, table, tbody, td, textarea, tfoot, th, thead, tr, ul {
+  color: #404040
+}
+
+a.touch {
+  background-color: #f0f0f0
+}
+
+#topToAppBanner a.touch {
+  background-color: #616263
+}
+
+.fl-l {
+  float: left
+}
+
+.fl-r {
+  float: right
+}
+
+.clear {
+  clear: both
+}
+
+.line {
+  border-bottom: 1px solid #e7e5e2;
+  height: 0
+}
+
+.house-xiaoqu .line {
+  margin: 0 0.86rem
+}
+
+.detail-icon {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_icon.png?v=20180108) no-repeat;
+  background-size: 110px auto
+}
+
+.orange {
+  color: #ff7200
+}
+
+.gray {
+  color: #a0a0a0
+}
+
+.s_ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.detail-list {
+  position: relative
+}
+
+.show-pic {
+  width: 100%;
+  height: 13.8rem
+}
+
+.icon-yichuzu {
+  position: absolute;
+  top: 0.57rem;
+  left: 0.57rem;
+  width: 79px;
+  height: 65px;
+  overflow: hidden;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_yichuzu.png) no-repeat;
+  background-size: 100%
+}
+
+.detail-list .xq-price {
+  padding-bottom: 0.86rem
+}
+
+.cont-padding {
+  padding-left: .97rem;
+  padding-right: .97rem
+}
+
+.house-header {
+  padding-top: 0.577rem;
+  padding-bottom: 0.577rem;
+  position: relative
+}
+
+.house-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding-right: 2.87rem
+}
+
+.tips-info div {
+  height: 12px;
+  line-height: 12px;
+  color: #a0a0a0;
+  font-size: 12px;
+  margin-right: 0.57rem
+}
+
+.house-condition {
+  font-size: 0;
+  margin-top: 10px
+}
+
+.house-condition span {
+  display: inline-block;
+  padding: .02rem .05rem;
+  height: 0.574rem;
+  line-height: 0.574rem;
+  font-size: 0.572rem;
+  margin-right: .05rem;
+  margin-bottom: .05rem;
+  color: #81879a;
+  background: #f1f1f1
+}
+
+.house-header-right {
+  position: absolute;
+  top: 0.579rem;
+  right: 0.86rem;
+  width: 2.58rem
+}
+
+a.keep-item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-left: 1px solid #e7e5e2
+}
+
+.keep-item .kicon {
+  width: 22px;
+  height: 22px;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_icon.png?v=20180108) no-repeat;
+  background-size: 110px auto;
+  background-position: -29px -53px;
+  margin: 0 auto
+}
+
+.active .kicon {
+  background-position: 0 -52px
+}
+
+.keep-item span {
+  color: #a0a0a0;
+  font-size: 12px;
+  display: block;
+  line-height: 12px;
+  margin-top: 7px
+}
+
+.house-mian-info {
+  padding-top: 0.577rem;
+  position: relative
+}
+
+.house-price {
+  height: 1.26rem;
+  overflow: hidden;
+  margin-bottom: 0.86rem
+}
+
+.price-low span {
+  display: inline-block;
+  margin-right: 5px
+}
+
+.price-low {
+  margin-bottom: 5px
+}
+
+.price-value {
+  font-size: 1.26rem;
+  color: #ff5600;
+  line-height: 1.26rem;
+  font-weight: 700
+}
+
+.price-unit {
+  color: #ff5600
+}
+
+.house-price .gray, .price-unit {
+  font-size: 0.572rem
+}
+
+.price-type {
+  font-size: 0.86rem;
+  line-height: 1.26rem
+}
+
+.price-stages {
+  color: #00AA98;
+  line-height: 30px;
+  font-size: 12px;
+  position: relative
+}
+
+.next-icon {
+  position: relative;
+  display: inline-block;
+  width: 5px;
+  height: 9px;
+  background-position: -66px -105px;
+  margin-left: 5px
+}
+
+.house-type {
+  margin-top: 15px;
+  margin-bottom: 15px
+}
+
+.house-type span {
+  display: inline-block;
+  width: 31%;
+  text-align: left;
+  font-size: 0.574rem;
+  line-height: 0.574rem
+}
+
+.house-icon {
+  padding: .05rem 0;
+  overflow: hidden
+}
+
+.house-icon li {
+  float: left;
+  width: 16.6%;
+  height: 3.1rem
+}
+
+.house-icon li .icon {
+  width: 22px;
+  height: 22px;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/detail_equit_icon.png?v=1) no-repeat;
+  background-size: auto 55px;
+  margin: 0 auto;
+  margin-top: 3.27rem
+}
+
+.house-icon li .text {
+  text-align: center;
+  font-size: 12px;
+  height: 12px;
+  line-height: 12px;
+  margin-top: .28rem;
+  color: #676767
+}
+
+.house-icon li .text.gray {
+  color: #dbdbdb;
+  text-decoration: line-through
+}
+
+.house-icon li .gray {
+  background-position-y: bottom
+}
+
+.house-icon li .eq-kuandai {
+  background-position-x: 0
+}
+
+.house-icon li .eq-kongtiao, .house-icon li .eq-zhong_yan_kong_tiao {
+  background-position-x: -27px
+}
+
+.house-icon li .eq-reshuiqi {
+  background-position-x: -55px
+}
+
+.house-icon li .eq-xiyiji {
+  background-position-x: -82px
+}
+
+.house-icon li .eq-bingxiang {
+  background-position-x: -112px
+}
+
+.house-icon li .eq-duliweishengjian {
+  background-position-x: -139px
+}
+
+.house-icon li .eq-ji_zhong_gong_nuan, .house-icon li .eq-nuanqi {
+  background-position-x: -170px
+}
+
+.house-icon li .eq-yangtai {
+  background-position-x: -200px
+}
+
+.house-icon li .eq-yigui {
+  background-position-x: -230px
+}
+
+.house-icon li .eq-dianshiji, .house-icon li .eq-you_xian_dian_shi {
+  background-position-x: -259px
+}
+
+.house-icon li .eq-kezuofan {
+  background-position-x: -290px
+}
+
+.house-icon li .eq-shafa {
+  background-position-x: -324px
+}
+
+.house-icon li .eq-chuang {
+  background-position-x: -359px
+}
+
+.house-icon li .eq-weibolu {
+  background-position-x: -394px
+}
+
+.house-icon li .eq-dian_ti, .house-icon li .eq-keti {
+  background-position-x: -481px
+}
+
+.house-icon li .eq-huoti {
+  background-position-x: -453px
+}
+
+.house-icon li .eq-futi {
+  background-position-x: -423px
+}
+
+.house-icon li .eq-shui {
+  background-position-x: -710px
+}
+
+.house-icon li .eq-tingchewei {
+  background-position-x: -567px
+}
+
+.house-icon li .eq-ranqi {
+  background-position-x: -510px
+}
+
+.house-icon li .eq-wangluo {
+  background-position-x: -594px
+}
+
+.house-icon li .eq-dian {
+  background-position-x: -626px
+}
+
+.house-icon li .eq-dianhua {
+  background-position-x: -654px
+}
+
+.house-icon li .eq-mei_qi {
+  background-position-x: -688px
+}
+
+.house-icon li .eq-shangshui {
+  background-position-x: -710px
+}
+
+.house-icon li .eq-xiashui {
+  background-position-x: -732px
+}
+
+.house-icon li .eq-guanmei {
+  background-position-x: -754px
+}
+
+.house-icon li .eq-paiyan {
+  background-position-x: -776px
+}
+
+.house-icon li .eq-paiwu {
+  background-position-x: -798px
+}
+
+.house-icon li .eq-380v {
+  background-position-x: -820px
+}
+
+.house-icon li .eq-keminghuo {
+  background-position-x: -688px
+}
+
+.house-icon li .eq-waibaiqu {
+  background-position-x: -842px
+}
+
+.comm-area {
+  padding-bottom: .4rem
+}
+
+.house-desc {
+  padding-top: 0.86rem;
+  padding-bottom: 0.57rem;
+  font-size: 0.574rem;
+  overflow: hidden;
+  color: #999;
+  font-family: PingFangSC-Regular;
+  transition: all .3s ease;
+  line-height: 1.32rem
+}
+
+.house-desc-title {
+  font-size: 0.576rem;
+  font-weight: 700;
+  color: #333;
+  line-height: .24rem;
+  margin-top: .065rem;
+  margin-bottom: .05rem
+}
+
+.desc-more {
+  padding-top: 0.86rem;
+  padding-bottom: 0.57rem
+}
+
+.desc-more .icon-down {
+  width: 14px;
+  height: 8px;
+  background-position: 0 -112px;
+  margin: 0 auto
+}
+
+.active .desc-more .icon-down {
+  background-position: -18px -112px
+}
+
+.roommate h2 {
+  padding: 0.572rem 0;
+  font-size: 0.576rem;
+  height: 0.578rem;
+  line-height: 0.578rem;
+  font-weight: 700;
+  border-bottom: 1px solid #e7e5e2
+}
+
+.roommate h3 {
+  font-size: 0.574rem;
+  height: 0.576rem;
+  line-height: 0.576rem;
+  color: #a0a0a0;
+  margin-top: 0.86rem
+}
+
+.roommate .room-info {
+  padding-bottom: .2rem;
+  border-bottom: 1px solid #e7e5e2
+}
+
+.roommate .room {
+  height: 0.576rem;
+  line-height: 0.576rem;
+  margin-top: 0.86rem
+}
+
+.room span {
+  display: inline-block;
+  width: 32.3%;
+  text-align: center;
+  color: #676767;
+  line-height: 0.576rem;
+  font-size: 0.86rem
+}
+
+.room span.left {
+  text-align: left
+}
+
+.room span.right {
+  text-align: right
+}
+
+.roommate .command {
+  padding-bottom: 0.57rem;
+  padding-top: .2rem
+}
+
+.command span {
+  display: inline-block;
+  color: #00AA98;
+  font-size: 0.574rem;
+  line-height: 0.86rem;
+  padding: .05rem 0.572rem;
+  border: 1px solid #00AA98;
+  border-radius: .2rem;
+  margin-right: .08rem;
+  margin-bottom: 0.57rem
+}
+
+.house-youhui {
+  font-size: 0.572rem;
+  line-height: 0.86rem;
+  padding-left: .32rem;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/icon_m_youhui.png?ver=20170907) 0 no-repeat;
+  background-size: .28rem 0.86rem
+}
+
+.house-youhui span {
+  display: inline-block;
+  margin-left: 3px;
+  color: #e33d3d;
+  line-height: 0.86rem
+}
+
+.xq-info {
+  padding: 0.572rem 0.86rem;
+  padding-right: .25rem;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  line-height: .2rem
+}
+
+.xq-info h2 {
+  width: 100%;
+  font-size: 0.576rem;
+  height: 0.578rem;
+  line-height: 0.578rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.xq-info h2 span {
+  font-size: 0.576rem;
+  line-height: 0.576rem
+}
+
+.xq-info > span {
+  font-size: 12px;
+  color: #a0a0a0;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  margin-right: 5px;
+  margin-top: 5px
+}
+
+.xq-info span em {
+  color: #404040
+}
+
+.xq-info em.orange {
+  color: #ff7d24
+}
+
+.xq-fy .icon-link, .xq-info .icon-link {
+  display: block;
+  width: 8px;
+  height: 14px;
+  position: absolute;
+  background-position: -62px -86px;
+  right: 0.86rem;
+  top: .25rem
+}
+
+.xq-info .single {
+  top: 0.86rem
+}
+
+.xq-addr, .xq-addr .area {
+  overflow: hidden
+}
+
+.xq-addr .area {
+  display: block;
+  width: 100%;
+  height: 0.574rem;
+  font-size: 0.574rem;
+  line-height: 0.574rem;
+  padding: 0.572rem 0;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.detail_module_title_wrap {
+  border-bottom: 1px solid #f3f3f3
+}
+
+.detail_module_title_wrap .detail_module_title {
+  height: 2.87rem;
+  line-height: 2.87rem;
+  padding: 0 0.86rem
+}
+
+.detail_module_title_wrap .detail_module_title .module_title {
+  float: left;
+  font-size: 0.576rem;
+  color: #333;
+  font-weight: 700
+}
+
+.detail_module_title_wrap .detail_module_title .title_tips {
+  vertical-align: middle;
+  font-size: 0.572rem;
+  color: #999;
+  display: inline
+}
+
+.detail_module_title_wrap .detail_module_sub, .detail_module_title_wrap .module_title {
+  height: 2.87rem;
+  line-height: 2.87rem
+}
+
+.detail_module_title_wrap .detail_module_sub {
+  float: right;
+  color: #999;
+  font-size: 0.572rem
+}
+
+.xq-addr .area .area_wrold {
+  color: #666;
+  height: 0.574rem;
+  line-height: 0.574rem;
+  font-size: 0.574rem;
+  width: 90%;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.xq-addr .area .area_icon {
+  float: right;
+  width: 8px;
+  height: 14px;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_icon.png?v=20180108) -67px -87px;
+  background-size: 110px 150px
+}
+
+.map-wrap .xq-name {
+  width: 100%;
+  position: absolute;
+  top: 0.86rem;
+  left: 0;
+  border-radius: .05rem;
+  text-align: center
+}
+
+.map-wrap .xq-name .xq_name_icon {
+  vertical-align: middle;
+  margin-left: .02rem;
+  width: 8px;
+  height: 14px;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_icon.png?v=20180108) -88px -124px;
+  background-size: 110px 150px
+}
+
+.map-wrap .xq-name-wrap {
+  line-height: 0.574rem;
+  margin-bottom: .05rem;
+  height: 0.574rem
+}
+
+.map-wrap .xq-name-wrap, .map-wrap .xq-subway-wrap {
+  color: #fff;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+.map-wrap .xq-subway-wrap {
+  font-size: 0.572rem;
+  display: inline-block;
+  background: rgba(0, 0, 0, .5);
+  border-radius: .08rem;
+  max-width: 90%;
+  line-height: 0.572rem;
+  height: 0.572rem;
+  padding: 0.57rem
+}
+
+.operation .content, .source .content {
+  padding: 0 0.86rem
+}
+
+.oper_detail .content_wrap {
+  background: #fbfbfb
+}
+
+.oper_detail .c_left {
+  background: #fff;
+  width: 32%
+}
+
+.oper_detail .c_left .item {
+  line-height: 2.58rem;
+  height: 2.58rem;
+  width: 90%;
+  padding-left: 10%;
+  font-size: 0.574rem
+}
+
+.oper_detail .c_right .item {
+  width: 95%;
+  padding-left: 5%
+}
+
+.oper_detail .c_left .item.hover {
+  background: #fbfbfb;
+  color: #00AA98
+}
+
+.oper_detail .c_left .item.hover span {
+  color: #00AA98
+}
+
+.oper_detail .c_right {
+  background: #fbfbfb;
+  width: 68%;
+  height: 5.4rem
+}
+
+.oper_detail .c_left, .oper_detail .c_right {
+  float: left
+}
+
+.oper_detail .c_right .i_item {
+  line-height: 2.58rem;
+  height: 2.58rem;
+  float: left;
+  padding-right: 5%;
+  font-size: 0.574rem
+}
+
+.oper_detail .c_right .i_item.i_item_name {
+  width: 35%
+}
+
+.oper_detail .c_right .i_item.i_item_con {
+  width: 55%
+}
+
+.oper_detail .c_right .price {
+  padding-right: 5%;
+  width: 50%
+}
+
+.oper_detail .c_right .distance, .oper_detail .c_right .price {
+  display: inline-block;
+  line-height: 2.58rem;
+  height: 2.58rem;
+  font-size: 0.574rem
+}
+
+.oper_detail .c_right .distance {
+  width: 45%
+}
+
+.err_tips {
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+  margin-top: 100%;
+  text-align: center
+}
+
+.consumption .content_wrap {
+  display: flex
+}
+
+.consumption .f_left, .consumption .f_right {
+  width: 50%;
+  height: 1.2rem;
+  flex: 1;
+  text-align: center
+}
+
+.consumption .middle_line {
+  width: .01rem;
+  height: .6rem;
+  background: #f3f3f3;
+  margin-top: .3rem
+}
+
+.consumption .info {
+  text-align: center;
+  line-height: 1;
+  padding-top: .3rem;
+  padding-bottom: 0.57rem
+}
+
+.consumption .info.grey .price, .consumption .info.grey .unit {
+  color: #333
+}
+
+.consumption .info.grey .price {
+  font-weight: 700
+}
+
+.consumption .info .price {
+  font-size: .24rem;
+  font-weight: 700
+}
+
+.consumption .info .unit {
+  font-size: 0.572rem;
+  vertical-align: 1px
+}
+
+.consumption .info .price, .consumption .info .unit {
+  color: #ff7200;
+  line-height: 1
+}
+
+.consumption .area_price {
+  line-height: 1;
+  color: #999
+}
+
+.map-wrap {
+  margin: 0 0.86rem 0.57rem
+}
+
+.map-wrap, .map-wrap a {
+  overflow: hidden;
+  position: relative;
+  display: block
+}
+
+.map-wrap img {
+  width: 100%;
+  height: 12.87rem;
+  display: block
+}
+
+.xq-distance {
+  position: absolute;
+  height: .2rem;
+  padding-left: 0.57rem;
+  padding-right: .05rem;
+  right: 0.86rem;
+  bottom: .2rem;
+  background: rgba(40, 40, 40, .7);
+  color: #fff;
+  font-size: 0.572rem;
+  line-height: .2rem;
+  border-radius: 0.57rem 0 0 0.57rem
+}
+
+.icon-xqzst {
+  display: inline-block;
+  width: 17px;
+  height: 8px;
+  background-position: -53px -117px;
+  margin-right: .05rem
+}
+
+.xq-price-num {
+  padding-bottom: 0.57rem
+}
+
+.xq-price-num span:first-child {
+  display: inline-block;
+  margin-right: 0.86rem
+}
+
+.xq-price span {
+  margin-right: .05rem
+}
+
+.xq-price span, .xq-price span em {
+  display: inline-block;
+  font-size: 0.574rem
+}
+
+.xq-price span em {
+  margin-left: 5px
+}
+
+.xq-price .trend-down, .xq-price .trend-up {
+  color: #ff7800
+}
+
+.xq-price .trend-down i, .xq-price .trend-up i {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  line-height: 999em;
+  vertical-align: middle;
+  margin-right: 4px;
+  overflow: hidden
+}
+
+.xq-price .trend-down .icon-arrow:after, .xq-price .trend-up .icon-arrow:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #ff7800
+}
+
+.xq-price .trend-down .icon-arrow:before, .xq-price .trend-up .icon-arrow:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 4px;
+  height: 7px;
+  background-color: #ff7800;
+  overflow: hidden
+}
+
+.xq-price .trend-down .icon-arrow:before {
+  top: 0;
+  background-color: #67b700
+}
+
+.xq-price .trend-down .icon-arrow:after {
+  top: 7px;
+  border-top-color: #67b700;
+  border-bottom-color: transparent
+}
+
+.xq-price .chart-area {
+  border-top: 1px dashed #a0a0a0
+}
+
+.xq-price span.gray {
+  color: #a0a0a0
+}
+
+.xq-fy {
+  padding: 0.57rem 0.86rem
+}
+
+.xq-fy span {
+  font-size: 0.574rem
+}
+
+.xq-fy a {
+  display: inline-block;
+  position: relative;
+  padding-right: 0.57rem
+}
+
+.xq-fy .icon-link {
+  top: .06rem;
+  right: 0
+}
+
+.xq-fy a span {
+  display: inline-block;
+  margin-right: 0.57rem;
+  font-size: 0.574rem
+}
+
+.xq-pos span {
+  font-size: 12px;
+  color: gray;
+  line-height: 12px
+}
+
+.xq-pos .icon-link {
+  display: block;
+  width: 8px;
+  height: 14px;
+  position: absolute;
+  background-position: -62px -85px;
+  right: 0.86rem;
+  top: 0.574rem
+}
+
+.detail-facility h3 {
+  padding: 0.57rem 0.86rem;
+  font-size: 0.576rem;
+  line-height: 0.86rem;
+  font-weight: 700
+}
+
+.facility-tab {
+  float: left;
+  width: 25%;
+  min-height: 290px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #f7f7f7
+}
+
+.facility-tab .active {
+  background-color: #f7f7f7;
+  color: #00AA98
+}
+
+.facility-tab a {
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  height: .34rem;
+  line-height: .34rem
+}
+
+.facility-cont {
+  padding-left: 25%
+}
+
+.facility-head {
+  width: 100%;
+  height: .34rem;
+  line-height: .34rem;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden
+}
+
+.facility-head span {
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #f0f0f0
+}
+
+.facility-head .w1 {
+  width: 25%
+}
+
+.facility-head .w2 {
+  width: 50%
+}
+
+.facility-head .w3 {
+  width: 24%
+}
+
+.facility-head .range {
+  line-height: 34px
+}
+
+.facility-data li {
+  height: .34rem;
+  line-height: .34rem;
+  position: relative;
+  overflow: hidden
+}
+
+.facility-data li a {
+  float: left;
+  display: inline-block;
+  text-align: center;
+  height: .34rem;
+  line-height: .34rem;
+  border: 0;
+  margin: 0;
+  padding: 0
+}
+
+.facility-data li a span {
+  color: #a0a0a0;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px dashed #e5e5e5;
+  height: .33rem;
+  line-height: .34rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.facility-data .data-title {
+  background: #f7f7f7;
+  color: #a0a0a0;
+  width: 61.7%;
+  padding-left: 5%
+}
+
+.facility-data .data-distance {
+  background: #f0f0f0;
+  color: #a0a0a0;
+  width: 30.3%;
+  padding-left: 3%
+}
+
+.facility-body {
+  background: #fff
+}
+
+.house-credit {
+  padding-top: 0.57rem;
+  padding-bottom: 0.57rem
+}
+
+.house-credit h2 {
+  font-size: 0.576rem;
+  line-height: .2rem;
+  font-weight: 700
+}
+
+.house-credit span {
+  display: inherit;
+  color: #b3b3b3;
+  font-size: 0.572rem;
+  line-height: .2rem
+}
+
+.house-credit a.btn {
+  display: inline-block;
+  height: .3rem;
+  width: .9rem;
+  line-height: .3rem;
+  color: #ff6524;
+  border: 1px solid #ff6524;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.576rem;
+  margin-top: .03rem
+}
+
+.house-against {
+  background: #fff8de
+}
+
+.house-against, .house-against-v {
+  padding-top: 0.86rem;
+  padding-bottom: 0.86rem;
+  overflow: hidden
+}
+
+.house-against-v {
+  height: 1.15rem
+}
+
+.house-against-v span {
+  font-size: 0.576rem;
+  line-height: 1.14rem
+}
+
+.house-against-v a {
+  font-size: 0.574rem;
+  color: #00AA98;
+  padding-right: 0.573rem;
+  position: relative;
+  line-height: 1.14rem
+}
+
+.house-against-v .icon-link {
+  display: block;
+  width: 8px;
+  height: 14px;
+  position: absolute;
+  background-position: -62px -69px;
+  right: 0;
+  top: .25rem
+}
+
+.house-against div {
+  font-size: 13px;
+  line-height: 13px;
+  height: 13px
+}
+
+.house-against div.orange {
+  margin-top: 7px
+}
+
+.house-against a.btn {
+  display: block;
+  background: #ff7200;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px
+}
+
+.house-broker-box {
+  height: 55px
+}
+
+.house-broker {
+  height: 55px;
+  background: #fff;
+  overflow: hidden
+}
+
+.house-broker .broker {
+  width: 65%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  height: 30px
+}
+
+.broker div {
+  padding-left: 0.86rem;
+  line-height: 12px;
+  height: 30px
+}
+
+.broker div.single {
+  padding-left: 0;
+  text-align: center
+}
+
+.broker span {
+  font-size: 12px;
+  line-height: 15px
+}
+
+.broker .call-phone{
+  border-right: 1px solid #e6e6e6;
+}
+
+.broker .call-phone span{
+  font-size: 15px !important;
+  padding-left: 3px;
+}
+
+.broker .single span {
+  font-size: 14px
+}
+
+.broker span em {
+  color: #b3b3b3;
+  line-height: 15px
+}
+
+.broker .single span em, .broker a {
+  display: block;
+  font-size: 12px
+}
+
+.broker a {
+  line-height: 12px;
+  height: 12px;
+  color: #00AA98;
+  padding-top: 5px
+}
+
+.house-broker .words {
+  width: 35%;
+  text-align: center;
+  height: 22px;
+  line-height: 22px;
+  padding-top: 16px;
+  padding-bottom: 17px
+}
+
+.house-broker .words span {
+  font-size: 16px;
+  color: #00AA98;
+  line-height: 22px;
+  display: inline-block;
+  margin-left: 5px
+}
+
+.house-broker .words i {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -29px -125px;
+  vertical-align: top
+}
+
+.house-broker .tel {
+  width: 33%;
+  text-align: center;
+  background: #00AA98;
+  height: 22px;
+  line-height: 22px;
+  padding-top: 16px;
+  padding-bottom: 17px
+}
+
+.house-broker .tel.touch {
+  background-color: #31a029
+}
+
+.house-broker .tel span {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  margin-left: 5px
+}
+
+.house-broker .tel i {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: 0 -84px;
+  vertical-align: top
+}
+
+.only-words .broker div {
+  border-right: none
+}
+
+.only-words .words {
+  float: right;
+  background: #00AA98
+}
+
+.only-words .words span {
+  color: #fff
+}
+
+.only-words .words i {
+  background-position: -53px -125px
+}
+
+.big-images-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background: #000;
+  width: 100%;
+  height: 100%
+}
+
+.broker-float.active {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #e7e5e2;
+  z-index: 99
+}
+
+.float-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ccc;
+  z-index: 9999
+}
+
+.recommend-box {
+  background: #eee;
+  height: .78rem;
+  overflow: hidden;
+  padding-top: 0.572rem;
+  padding-bottom: 0.572rem
+}
+
+.recommend-line {
+  width: 30%;
+  margin-top: .25rem;
+  border-top: 1px solid #ccc
+}
+
+.rec-center {
+  text-align: center;
+  width: 39%;
+  height: 100%
+}
+
+.rec-icon {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_icon.png?v=20180108) 0 0 no-repeat;
+  background-size: 110px auto;
+  margin: 0 auto;
+  width: 68px;
+  height: 50px
+}
+
+.rec-down {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_icon.png?v=20180108) no-repeat;
+  background-size: 110px auto;
+  width: 7px;
+  height: 8px;
+  background-position: -39px -112px;
+  margin: 0 auto
+}
+
+.rec-font {
+  font-size: 12px
+}
+
+.house-miniQrCode {
+  text-align: center;
+  padding: 0.57rem 0
+}
+
+.house-miniQrCode img {
+  width: 1.72rem;
+  height: 1.72rem
+}
+
+.house-miniQrCode p {
+  line-height: .2rem
+}
+
+.tip {
+  z-index: 101;
+  position: fixed;
+  top: 45%;
+  background: rgba(40, 40, 40, .7);
+  border-radius: 5px;
+  padding: .23rem .25rem .3rem;
+  text-align: center;
+  left: 50%;
+  width: 2.2rem;
+  margin-left: -1.35rem
+}
+
+.tip-title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 0.57rem;
+  font-family: PingFang SC Regular
+}
+
+.tip-cont {
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff
+}
+
+.house-info {
+  margin-bottom: 0.57rem
+}
+
+.house-info div {
+  overflow: hidden;
+  margin-bottom: .05rem
+}
+
+.house-info .item {
+  float: left;
+  width: 100%
+}
+
+.house-info .item_half {
+  width: 50%
+}
+
+.house-info div span {
+  line-height: .2rem;
+  font-size: 0.574rem;
+  display: inline-block
+}
+
+.house-info .info-title {
+  float: left;
+  width: 5em;
+  height: .2rem;
+  overflow: hidden;
+  color: #999
+}
+
+.house-info .info-title:after {
+  display: inline-block;
+  content: "";
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+  width: 100%
+}
+
+.house-info .info-fh {
+  float: left;
+  width: 0.86rem;
+  text-align: left;
+  line-height: .2rem
+}
+
+.house-info .info-cont {
+  color: #333;
+  margin-left: 5em;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.house-info .space {
+  width: 2em
+}
+
+.house-renzheng .person-info, .house-renzheng .renzheng-info {
+  padding: 0.86rem 0
+}
+
+.person-info img {
+  width: .4rem;
+  height: .4rem;
+  border-radius: .4rem
+}
+
+.person-info h3, .person-info p {
+  padding-left: .54rem;
+  color: #333
+}
+
+.person-info h3 {
+  height: .21rem;
+  font-size: 0.86rem;
+  line-height: .21rem;
+  margin-bottom: .02rem
+}
+
+.person-info p, .person-info p span {
+  height: 0.577rem;
+  line-height: 0.577rem;
+  font-size: 0.572rem
+}
+
+.renzheng-info {
+  display: flex
+}
+
+.renzheng-info li {
+  flex: 1;
+  text-align: center
+}
+
+.renzheng-info li i {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background-size: 220px auto
+}
+
+.icon-phone {
+  background-position: -145px -43px
+}
+
+.icon-phone-gray {
+  background-position: -188px -43px
+}
+
+.icon-weixin {
+  background-position: -145px -87px
+}
+
+.icon-weixin-gray {
+  background-position: -188px -87px
+}
+
+.icon-zhima {
+  background-position: -145px -131px
+}
+
+.icon-zhima-gray {
+  background-position: -188px -131px
+}
+
+.icon-renlian {
+  background-position: -145px 0
+}
+
+.icon-renlian-gray {
+  background-position: -188px 0
+}
+
+.renzheng-info li span {
+  font-size: 0.57rem
+}
+
+.over-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 800;
+  display: none
+}
+
+.layer-box {
+  width: 280px;
+  height: 137px;
+  position: relative;
+  left: 50%;
+  margin-left: -140px;
+  top: 200px;
+  background: hsla(0, 0%, 100%, .93);
+  border-radius: 5px;
+  font-family: PingFangSC Regular
+}
+
+.layer-content {
+  height: 96px;
+  padding-top: 1px
+}
+
+.layer-bottom {
+  height: 40px;
+  background: #00AA98;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0 0 5px 5px
+}
+
+.layer-cont {
+  width: 140px;
+  height: 30px;
+  line-height: 16px;
+  padding-left: 45px;
+  margin: 0 auto;
+  margin-top: 33px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/icon_m_tip.png) 0 no-repeat;
+  background-size: 30px auto
+}
+
+.layer-cont span {
+  display: block;
+  color: #e43c3c;
+  line-height: 16px
+}
+
+.return-back {
+  position: absolute;
+  width: .32rem;
+  height: .32rem;
+  top: 0;
+  left: .05rem;
+  padding-top: 0.57rem;
+  padding-left: 0.57rem;
+  z-index: 800
+}
+
+.return-btn {
+  width: 27px;
+  height: 27px;
+  border-radius: 14px;
+  background: rgba(51, 51, 51, .9);
+  padding-top: 1px;
+  padding-left: 1px
+}
+
+.icon-back {
+  display: block;
+  width: 8px;
+  height: 14px;
+  background-position: -12px -123px;
+  margin-top: 5px;
+  margin-left: 8px
+}
+
+.return-back.active {
+  position: fixed;
+  top: 0;
+  left: .05rem
+}
+
+.return-back.change .return-btn {
+  background: hsla(0, 0%, 90%, .9)
+}
+
+.change .icon-back {
+  background-position: 0 -123px
+}
+
+.list-ads2 .detail_tg_download {
+  background-color: #00AA98;
+  margin: 0.57rem 0.86rem;
+  height: .44rem;
+  padding: .08rem 0
+}
+
+.list-ads2 .detail_tg_download p {
+  line-height: 0.572rem
+}
+
+.list-ads2 .detail_tg_download .down_title {
+  font-size: 0.572rem;
+  margin-bottom: .04rem
+}
+
+.list-ads2 .detail_tg_download .down_notes {
+  font-size: 0.571rem;
+  color: #fff
+}
+
+.list-ads2 .detail_tg_download span {
+  right: .3rem;
+  left: inherit
+}
+
+.fcj-banner {
+  display: block;
+  width: 100%;
+  height: .4rem;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/gj_fcj_banner.jpg);
+  background-size: 100% 100%
+}
+
+.secret-middleCeng {
+  position: fixed;
+  background-color: rgba(0, 0, 0, .5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 801
+}
+
+.secret-mainPanel {
+  position: absolute;
+  z-index: 802;
+  border-radius: 12px;
+  top: 50%;
+  margin-top: -1.95rem;
+  left: 50%;
+  margin-left: -1.09rem;
+  text-align: center;
+  width: 20.578rem
+}
+
+.secret-mainPanel .secret-image {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/secretTel_bg.png?vet=1) bottom no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 1.47rem
+}
+
+.secret-mainPanel .secret-content {
+  background: #fff;
+  height: 2.25rem;
+  border-radius: 0 0 0.57rem 0.57rem
+}
+
+.secret-content .secret-cancel {
+  position: absolute;
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/secretTel_close.png) 100% 0 no-repeat;
+  background-size: 100% 100%;
+  width: .36rem;
+  height: .55rem;
+  right: -0.57rem;
+  top: -.08rem;
+  transform: translateX(-9px)
+}
+
+.secret-content .secret-title {
+  padding-top: .2rem;
+  text-align: center;
+  font-size: 0.574rem;
+  color: #161616
+}
+
+.secret-content .secret-info {
+  margin-top: .05rem;
+  text-align: center;
+  font-size: 0.57rem;
+  line-height: 0.57rem;
+  color: #a7a7a7
+}
+
+.secret-content a {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.574rem;
+  border-radius: .34rem;
+  height: .42rem;
+  line-height: .42rem;
+  text-decoration: none;
+  width: 1.56rem
+}
+
+.secret-content .secretButtonActive {
+  color: #fff;
+  background-color: #00AA98;
+  margin-top: .25rem
+}
+
+.secret-content .secretButton {
+  margin-top: 0.57rem;
+  color: #676767;
+  background: #fff;
+  border: 1px solid #dbdbdb
+}
+
+.secret-content .secretButtonActive.touch {
+  background-color: #31a029
+}
+
+.secret-content .secretButton.touch {
+  background-color: #f0f0f0
+}
+
+.slide-box {
+  overflow: hidden;
+  position: relative
+}
+
+.fullscreen-box, .slide-box {
+  width: 100%;
+  height: 100%;
+  background: #000
+}
+
+.fullscreen-box {
+  position: fixed;
+  z-index: 801;
+  top: 0;
+  left: 0
+}
+
+.slide-box .slide-area, .slide-box .slide-area li {
+  position: relative;
+  height: 100%
+}
+
+.slide-box .slide-area li {
+  float: left;
+  width: 100%;
+  background: #000
+}
+
+.slide-box .slide-area li video {
+  position: absolute
+}
+
+.slide-box .slide-area li img {
+  width: 100%;
+  display: block
+}
+
+.slide-box .vertical-middle, .video-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%)
+}
+
+.video-icon {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_video_icon.png) no-repeat
+}
+
+.video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%)
+}
+
+.load-box, .play-box, .reload-box {
+  background: rgba(0, 0, 0, .3);
+  border-radius: 50%;
+  text-align: center;
+  width: .6rem;
+  height: .6rem
+}
+
+.pause-icon, .play-icon {
+  width: 0.86rem;
+  height: .2rem;
+  background-size: .74rem
+}
+
+.play-icon {
+  background-position: 0 0;
+  margin-left: .05rem
+}
+
+.pause-icon {
+  background-position: 0 -.2rem;
+  height: .23rem
+}
+
+.load-icon {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/load.png) no-repeat;
+  width: .25rem;
+  height: .25rem;
+  top: 0.578rem;
+  background-size: .26rem;
+  animation: loading 2s linear infinite;
+  -webkit-animation: loading 2s linear infinite
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(1turn)
+  }
+  to {
+    transform: rotate(0deg)
+  }
+}
+
+.reload-icon {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_video_icon.png) no-repeat;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: .2rem;
+  height: 1.26rem;
+  background-size: .68rem;
+  background-position: 0 -.89rem
+}
+
+.reload-box p {
+  display: none;
+  white-space: nowrap;
+  line-height: 0.576rem;
+  color: #fff;
+  font-size: 0.86rem;
+  margin-left: 0.57rem
+}
+
+.error-box .reload-box {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: .08rem 2.87rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background: none
+}
+
+.error-box .reload-icon {
+  top: auto;
+  transform: translateY(0)
+}
+
+.err-info {
+  font-size: 0.574rem;
+  color: #fff;
+  line-height: 0.576rem;
+  margin-bottom: .2rem
+}
+
+.error-box p {
+  display: block
+}
+
+.video-control {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  padding: 5px 0;
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5))
+}
+
+.video-status-btn {
+  padding: 0 10px;
+  height: 16px;
+  line-height: 16px;
+  box-sizing: border-box
+}
+
+.status-icon {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_video_icon.png) no-repeat;
+  background-size: 55px;
+  width: 10px;
+  height: 16px
+}
+
+.video-status-btn .play-icon {
+  background-position: 0 0;
+  margin: 0
+}
+
+.video-status-btn .pause-icon {
+  background-position: 0 -15px;
+  width: 14px
+}
+
+.current-time {
+  margin: 0 10px;
+  font-size: 12px;
+  font-family: Helvetica;
+  color: #fff
+}
+
+.progress-bar {
+  background: #f3f3f3;
+  flex: 1;
+  height: 5px
+}
+
+.progress-bar, .progress-bar-now {
+  border-radius: 6px;
+  position: relative
+}
+
+.progress-bar-now {
+  width: 0;
+  max-width: 100%;
+  height: 100%;
+  background: #00AA98
+}
+
+.progress-bar-now:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -5px;
+  background: #fff;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%)
+}
+
+.screen-control {
+  background: url(http://sta.ganjistatic1.com/public/image/mobile/touch/milan/house/m_detail_video_icon.png) no-repeat;
+  background-size: 55px;
+  width: 20px;
+  height: 20px;
+  padding-right: 10px
+}
+
+.fullscreen-btn {
+  background-position: 0 -34px
+}
+
+.smallscreen-btn {
+  background-position: 0 -53px
+}
+
+.pic-num {
+  width: .38rem;
+  height: .2rem;
+  padding-right: 0.572rem;
+  text-align: right;
+  line-height: .2rem;
+  position: absolute;
+  right: 0;
+  bottom: .08rem;
+  border-radius: 0.57rem 0 0 0.57rem;
+  background: rgba(40, 40, 40, .7);
+  color: #fff;
+  font-size: 12px
+}
+
+.video-img-change {
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+
+.video-img-tag {
+  border-radius: 1rem;
+  background: hsla(0, 0%, 100%, .3);
+  padding: 0 0.576rem;
+  margin: 0 0.578rem;
+  color: #fff;
+  font-size: 12px
+}
+
+.active-tag {
+  background: #00AA98
+}
