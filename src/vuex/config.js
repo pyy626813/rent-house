@@ -15,12 +15,12 @@ export default {
     icon:'eq-reshuiqi',
     name:'热水器',
     key:'waterHeater',
-    has:0
+    has:1
   },{
     icon:'eq-xiyiji',
     name:'洗衣机',
     key:'washer',
-    has:0
+    has:1
   },{
     icon:'eq-bingxiang',
     name:'冰箱',

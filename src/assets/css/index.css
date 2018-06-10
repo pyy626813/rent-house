@@ -85,7 +85,6 @@ a.touch {
 }
 
 .house-header {
-  padding-top: 0.577rem;
   padding-bottom: 0.577rem;
   position: relative
 }
@@ -1193,7 +1192,6 @@ a.keep-item {
 
 .broker div {
   padding-left: 0.86rem;
-  line-height: 12px;
   height: 30px
 }
 

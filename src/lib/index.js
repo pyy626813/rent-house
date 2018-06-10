@@ -1,12 +1,13 @@
 //时间
 import Moment from 'moment';
 
-import nasTool from './nas';
+import nasTool from './nasTool';
 
 //jq
 import './deferred'
 import '@/assets/iconfont/iconfont.css';
 import '@/assets/css/common.css';
+import '@/assets/css/adjust.css';
 
 import  {AlertPlugin, LoadingPlugin, ToastPlugin, ConfirmPlugin, DatetimePlugin} from 'vux';
 

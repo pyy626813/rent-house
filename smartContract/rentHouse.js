@@ -23,7 +23,7 @@ RentContract.prototype = {
 
   init : function() {
 
-    this.adminAddress = "";
+    this.adminAddress = "n1PjUo1btMbhsozGGfZwFBsFj8Bs4mPd7EG";
     this.houseNums = 0;
   },
 
@@ -58,6 +58,10 @@ RentContract.prototype = {
   delHouse : function (hash) {
 
     this.houses.del(hash);
+  },
+
+  getHouse : function (hash) {
+    return this.houses.get(hash);
   },
 
   getHouses : function (limit, offset) {
@@ -111,6 +115,13 @@ RentContract.prototype = {
 
     var userInfo = this.users.get(fromUser);
 
+    return userInfo;
+  },
+
+  getAccount(){
+    var fromUser = Blockchain.transaction.from;
+    var userInfo = this.users.get(fromUser) || {};
+    userInfo.fromUser = fromUser
     return userInfo;
   },
 

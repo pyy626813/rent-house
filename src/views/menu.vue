@@ -68,9 +68,9 @@
             name:'myhouse',
             iconCls:'icon-wode'
           },{
-            title:'设置',
+            title:'关于',
             name:'setting',
-            iconCls:'icon-shezhi'
+            iconCls:'icon-guanyu'
           }]
       };
     },

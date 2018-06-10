@@ -33,11 +33,11 @@
     color: #afaaaa;
   }
 
-  .house-icon .hasdev{
-    .icon{
+  .house-icon .hasdev {
+    .icon {
       opacity: 1;
       color: #00AA98;
-      background-image: url("../assets/images/house-device-has.png")!important;
+      background-image: url("../assets/images/house-device-has.png") !important;
     }
     .text {
       color: #00AA98;
@@ -186,7 +186,8 @@
     border-color: #00AA98 !important;
     background-color: #00AA98 !important;
   }
-  .weui-btn_primary{
+
+  .weui-btn_primary {
     background-color: #00AA98 !important;
   }
 </style>
@@ -195,14 +196,21 @@
     <my-head centerTitle="新增房源" @headBack="back"></my-head>
     <!--<div class="back" @click="backList"><i class="iconfont icon-fanhui"></i>返回</div>-->
     <group>
-      <x-input title="标题" v-model="title"></x-input>
+      <x-input title="标题" v-model="title" :required="true"></x-input>
     </group>
     <group>
-      <x-input title="月租费用(nas)" v-model="money" text-align="right"></x-input>
+      <x-input title="月租费用(nas)" v-model="money" text-align="right" :required="true" type="number"></x-input>
       <popup-radio title="性质" :options="rentHouseTypes" v-model="type"></popup-radio>
       <x-input title="楼层" v-model="floor" placeholder="如:3/6" text-align="right"></x-input>
       <x-switch title="电梯" v-model="elevator" :value-map="[0,1]"></x-switch>
       <x-input title="房间大小(㎡)" v-model="roomSize" text-align="right"></x-input>
+      <popup-radio title="装修程度" :options="['精装修','普通装修']" v-model="decation"></popup-radio>
+    </group>
+    <group>
+      <x-address title="地址" v-model="address" :list="addressData" placeholder="请选择地址"
+                 :show.sync="showAddress"></x-address>
+      <x-input title="门牌号" v-model="roomNo" text-align="right" placeholder="如:308室"></x-input>
+      <x-input title="联系号码" v-model="concatPhone" text-align="right"></x-input>
     </group>
     <group>
       <ul class="house-icon">
@@ -210,50 +218,10 @@
           <div class="icon" :class="device.icon"></div>
           <div class="text">{{device.name}}</div>
         </li>
-        <!--<li>
-          <div class="icon eq-reshuiqi"></div>
-          <div class="text ">热水器</div>
-        </li>
-        <li>
-          <div class="icon eq-xiyiji"></div>
-          <div class="text ">洗衣机</div>
-        </li>
-        <li>
-          <div class="icon eq-bingxiang"></div>
-          <div class="text ">冰箱</div>
-        </li>
-        <li>
-          <div class="icon eq-shafa"></div>
-          <div class="text ">沙发</div>
-        </li>
-        <li>
-          <div class="icon eq-yigui"></div>
-          <div class="text ">衣柜</div>
-        </li>
-        <li>
-          <div class="icon eq-nuanqi"></div>
-          <div class="text ">暖气</div>
-        </li>
-        <li>
-          <div class="icon eq-kuandai"></div>
-          <div class="text ">宽带网</div>
-        </li>
-        <li>
-          <div class="icon eq-kezuofan"></div>
-          <div class="text ">可做饭</div>
-        </li>
-        <li>
-          <div class="icon eq-yangtai"></div>
-          <div class="text ">独立阳台</div>
-        </li>
-        <li>
-          <div class="icon eq-duliweishengjian"></div>
-          <div class="text ">独卫</div>
-        </li>-->
       </ul>
     </group>
     <group>
-      <x-textarea :max="500" title="说明" :value="descr"></x-textarea>
+      <x-textarea :max="500" title="说明" v-model="descr"></x-textarea>
     </group>
     <box gap="10px 10px">
       <x-button type="primary" @click.native="addHouse">确定</x-button>
@@ -261,21 +229,27 @@
   </div>
 </template>
 <script>
-  import {Group, XInput, Cell, PopupRadio, XSwitch, XTextarea, XButton,Box} from 'vux'
+  import {Group, XInput, Cell, PopupRadio, XSwitch, XTextarea, XButton, Box, XAddress, ChinaAddressV4Data} from 'vux'
   import MyHead from '../components/head';
+  import house from '../lib/house.js';
 
   export default {
-    components: {MyHead, Group, XInput, Cell, PopupRadio, XSwitch, XTextarea, XButton,Box},
+    components: {MyHead, Group, XInput, Cell, PopupRadio, XSwitch, XTextarea, XButton, Box, XAddress},
     data() {
       return {
         title: null,//标题
         money: null,//房租
         type: 'A',//A:整租，B:单间
         floor: null,//楼层
-        decation: '',//装修程度
+        decation: '精装修',//装修程度
         elevator: 1,//是否电梯
         roomSize: null,
-        descr: null
+        descr: null,
+        roomNo: null,
+        concatPhone:null,//联系号码
+        addressData: ChinaAddressV4Data,
+        showAddress: false,
+        address: []
       };
     },
     methods: {
@@ -283,8 +257,55 @@
         this.$router.go(-1);
       },
       addHouse() {
-        this.$nasTool.addHouse({
-          title:'测试1111'
+        var data = {
+          title: this.title,
+          money: this.money || 0,
+          type: this.type,
+          floor: this.floor,
+          decation: this.decation,
+          elevator: this.elevator,
+          roomSize: this.roomSize,
+          descr: this.descr,
+          address: this.address,
+          roomNo:this.roomNo,
+          concatPhone:this.concatPhone,
+          deployTime:new Date().getTime()
+        };
+
+        var devices_array = [];
+        this.devices.forEach(dev => {
+          if (dev.has) {
+            devices_array.push(dev.key);
+          }
+        });
+        data.devices = devices_array;
+        var cur = this;
+        var errorMsg = null;
+        if(!data.title){
+          errorMsg = '标题不能为空';
+        }else if(data.money < 0){
+          errorMsg = '月租费用不能小于0';
+        }else if(data.address.length < 0){
+          errorMsg = '请选择地址';
+          this.showAddress = true;
+        }else if(data.devices.length < 0){
+          errorMsg = '总不至于什么设备都没有吧!';
+        }
+        if(errorMsg){
+          this.$vux.toast.text(errorMsg);
+          return;
+        }
+        house.addHouse(data, res => {
+          if (res.code == 0) {
+            this.$vux.toast.show({
+              text: '新增成功!',
+              onHide() {
+                cur.$router.push({
+                  name: 'myhouse'
+                })
+              }
+            })
+          }
         });
       }
     },
@@ -292,7 +313,7 @@
       rentHouseTypes() {
         return this.$store.state.rentHouseTypes;
       },
-      devices(){
+      devices() {
         return this.$store.state.devices;
       }
     }
