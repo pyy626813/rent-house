@@ -1,6 +1,9 @@
 var routers = [{
+  path:'/',
+  redirect:'/search'
+}, {
   name: 'menu',
-  path: '/',
+  path: '/menu',
   component(resolve) {
     require(['../views/menu.vue'], resolve)
   },
@@ -27,13 +30,13 @@ var routers = [{
       }
     }
   ]
-},{
+}, {
   name: 'detail',
   path: '/detail',
   component(resolve) {
     require(['../views/detail.vue'], resolve)
   }
-},{
+}, {
   name: 'addHouse',
   path: '/addHouse',
   component(resolve) {

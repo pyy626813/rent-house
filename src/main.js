@@ -17,7 +17,7 @@ const store = new Vuex.Store(VuexConfig)
 
 const router = new VueRouter({
   // mode: 'hash',
-  mode: 'history',
+  //mode: 'history',
   routes
 });
 

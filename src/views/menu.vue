@@ -78,7 +78,7 @@
     },
     methods:{
       counts:function (name) {
-
+        return 0;
       }
     },
   };
